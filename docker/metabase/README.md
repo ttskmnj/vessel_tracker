@@ -1,6 +1,6 @@
 # How to set up Metabase on docker container
 
-### 1. open `0.0.0.0:3000` in browser.
+### 1. open `localhost:3000` in browser.
 Make sure all containers are up. Maybe it will take a few minutes for Metabase container to finish booting.
 click `let's get started` to Metabase set up. 
 

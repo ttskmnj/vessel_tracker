@@ -106,8 +106,10 @@ add following line and save it.
 */5 * * * * <PATH TO DOCKER COMMAND> exec vessel_tracker python src/save_to_dw.py >> /tmp/cronerr.log 2>&1
 ```
 **\*I might going to replace crontab with Airflow in the future**
+
 ### 5. check vessel tracking data on Metabase
-You need to set up Metabase first. please follow the steps [here](./docker/metabase/README.md). You better wait about 30 minutes or even more to see sufficient amount of data since AIS location data is save every 5 minutes.
+You need to set up Metabase first. please follow the steps [here](./docker/metabase/README.md). 
+
 click `Browse data` in sidemenu 
 
 ![image](./docker/metabase/readme_img/step9.png)
@@ -120,8 +122,9 @@ choose `<Display name>` you have chosen while setting up Metabase. In this image
 Choose `Ais Location`
 ![image](./docker/metabase/readme_img/step11.png)
 
-Now you can see AIS location data in MongoDB. To visualize data, click `Visualization` at the bottom
+Now you can see AIS location data in MongoDB. To visualize data, click `Visualization` at the bottom.
 
+*Tips: You better wait about 30 minutes or even more to see sufficient amount of data since AIS location data is save every 5 minutes.*
 ![image](./docker/metabase/readme_img/step12.png)
 
 Choose `map` from sidemenu to show data points on the map
